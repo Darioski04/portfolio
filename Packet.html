@@ -37,7 +37,7 @@
         </nav>
         <section class="page-section about-heading">
             <div class="container">
-                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/ppppp.PNG" alt="..." />
                 <div class="about-heading-content">
                     <div class="row">
                         <div class="col-xl-9 col-lg-10 mx-auto">
@@ -46,8 +46,42 @@
                                     <span class="section-heading-upper">Realizzato una rete</span>
                                     <span class="section-heading-lower">Rete con VLAN</span>
                                 </h2>
-                                <p>
+
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Cosa e'</span>
+                                </h2>
+                                <p>E' una tecnica con la quale è possibile allestire più reti locali divise a livello logico ma che condividono la stessa infrastruttura fisica. 
+                                    Vengono gestite tramite appositi switch amministrabili, consentendo di predisporre diversi segmenti di rete all'interno dei quali i singoli sistemi e dispositivi possono comunicare tra di loro senza la necessità di un router, garantendo una elevata scalabilità della rete. Con le VLAN si realizzano domini di broadcast separati, garantendo le performance della rete. Con l’uso del protocollo 802.1Q è possibile estendere le VLAN su altre reti fisiche collegando gli switch attraverso delle apposite porte dette di “trunk”.
                                 </p>
+
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Realizzazione</span>
+                                </h2>
+                                <p>Dopo aver inserito i vari componenti e collegati tra loro, iniziamo a configurare ogni dispositivo host con un indirizzo IP statico e come gateway viene rappresentato dall’indirizzo ip del router che in questo caso è 172.168.3.1.
+                                    Dopo questo passaggio, cominciamo a creare le due VLAN che si andranno ad inserire:
+                                    La VLAN alunni (numero: 100) che comprenderà i due PC alunno1 e alunno2
+                                    Invece la VLAN docenti(numero: 200) che comprenderà, quindi gli altri due, ovvero docente1 e docente2.
+                                </p>
+                                <p>
+                                    Per inserire questi valori, bisogna andare nella configurazione degli switch e cliccare sulla scheda della VLAN Database, successivamente premere il tasto add.
+                                Dopo aver fatto questo passaggio per tutti gli switch, andiamo a definire le singole porte di essi con le varie modalità.
+                                Per i collegamenti tra gli switch bisogna inserire la modalità Trunk.
+                                </p>
+                                
+                                <p>Invece per il cavo fast Ethernet che collega lo switch con gli host bisogna inserire la modalità access con il determinato collegamento VLAN del computer, ad esempio se bisogna fare un collegamento tra lo switch e il pc dell’alunno allora lo si collega con la VLAN 100-alunni
+
+                                    Per concludere, facciamo il collegamento tra lo switch e il router richiesto, mettendo uno switch: docenti:200 poiché dobbiamo assegnare a questa porta la VLAN che fornisce l’accesso al router.
+
+                                </p>
+                                <a href="https://drive.google.com/drive/folders/1ompDzpPEHQqgkGAX7QLBZCmqSH0XX9AP">Documento</a>
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Cosa ho imparato</span>
+                                </h2>
+                                <p>Durante questa esperienza, ho imparato a creare e configurare la rete che andiamo a creare.</p>
+                                <li class="nav-item px-lg-4"><a>Ho imparato a sviluppare la VLAN per suddivere la rete in dei segmenti logici</a></li>
+                                <li class="nav-item px-lg-4"><a>Implementazione di collegamenti ridondanti per garantire l’affidabilità della rete.</a></li>
+                                <li class="nav-item px-lg-4"><a>Ho imparato a sviluppare la VLAN per suddivere la rete in dei segmenti logici</a></li>
+
                             </div>
                         </div>
                     </div>
