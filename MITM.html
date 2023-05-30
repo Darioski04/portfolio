@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Business Casual - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">Esperienza Importante</span>
+                <span class="site-heading-lower">Man in the Middle</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About Me</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Products</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Store</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section about-heading">
+            <div class="container">
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Esperienza</span>
+                                    <span class="section-heading-lower">MITM</span>
+                                </h2>
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Cosa e'</span>
+                                </h2>
+                                
+                                <p>L'attacco Man in the Middle (MITM) è una strategia in cui un individuo malevolo si inserisce tra due parti che stanno comunicando tra loro, agendo come un intermediario nascosto e manipolatore.
+                                
+                                </p>
+                                <p> L'attaccante riesce a intercettare la comunicazione e ha il potere di monitorarla, modificarla o persino inserire dati falsi. Questo tipo di attacco compromette gravemente la privacy e l'integrità delle informazioni trasmesse, in quanto l'attaccante può accedere a informazioni riservate come password, dati personali o dettagli di transazioni finanziarie.
+                                
+                                </p>
+                                <p>Per proteggersi da questo tipo di minaccia, è fondamentale fare uso di protocolli crittografici avanzati come SSL/TLS e adottare metodi di autenticazione affidabili. Queste misure di sicurezza aiutano a garantire che le comunicazioni siano crittografate e che le identità delle parti coinvolte siano verificate in modo adeguato, riducendo così il rischio di un attacco Man in the Middle.
+
+                                </p>
+
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Descrizione della esperienza</span>
+                                </h2>
+                                
+
+                                <p> Con il primo comando, consentiamo al nostro computer di funzionare come un router attivando  l’inoltro dei pacchetti IPv4.</p>
+                                <p style="background-color:Tomato;"> sysctl -w net.ipv4.ip_forward=1</p>
+
+                                <p>Per eseguire l'intercettazione dei pacchetti dalla vittima con l'attacco Man in the Middle, viene utilizzato un comando chiamato "arpspoof", che consente di ingannare la vittima facendole credere di comunicare con il router predefinito. È importante assicurarsi di sostituire correttamente le variabili "[Nome dell'interfaccia di rete]", "[IP della vittima]" e "[IP del router]" con i valori appropriati. </p>
+                                <p>In questo modo, l'attaccante può assumere il ruolo del router e dirigere il flusso di comunicazione tra la vittima e il router attraverso di sé, senza che la vittima se ne accorga. Questa manipolazione consente all'attaccante di intercettare, monitorare o persino modificare le informazioni che vengono scambiate tra le due parti.</p>
+                                <p style="background-color:Tomato;">arpspoof -i [Nome dell'interfaccia di rete] -t [IP della vittima] [IP del router]</p>
+
+                                <p>Per fare in modo di intercettare i pacchetti dal router. Bisogna andare in un secondo terminale, viene eseguito il comando "arpspoof" per comunicare al router che siamo la vittima. Questa azione mira a ingannare il router facendogli credere che siamo la legittima vittima della comunicazione.</p>
+                                <p style="background-color:Tomato;">arpspoof -i [Nome dell'interfaccia di rete] -t [IP del router] [IP della vittima]</p>
+                                
+                                <p>Utilizzando il comando menzionato in precedenza, si avvia l'uso dello strumento chiamato "driftnet" per rilevare e catturare le immagini che la vittima sta visualizzando durante la sua navigazione. Questo strumento permette di monitorare il traffico di rete e identificare le immagini che vengono trasferite tra la vittima e i siti web visitati.</p>
+                                <p style="background-color:Tomato;">driftnet -i [Nome dell'interfaccia di rete]</p>
+                                
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Cosa ho imparato</span>
+                                </h2>
+                                <p>Durante questa esperienza, ho sviluppato un insieme di competenze che mi consentono di preservare la mia sicurezza online. Queste nuove abilità mi offrono strumenti efficaci per difendermi dagli eventuali pericoli che possono insorgere nel contesto delle reti informatiche.</p>
+                                 <li class="nav-item px-lg-4"><a>Ho imparato l'importanza della sicurezza delle reti e le tattiche utilizzate dagli attaccanti informatici.</a></li>
+                                 <li class="nav-item px-lg-4"><a>Ora evito di utilizzare reti Wi-Fi pubbliche non sicure, poiché ho imparato che possono essere un terreno fertile per gli attacchi informatici.</a></li>
+                                 <li class="nav-item px-lg-4"><a>Ho imparato che è fondamentale mantenere aggiornato il firmware dei dispositivi di rete per garantire le ultime correzioni di sicurezza.</a></li>
+                                 <li class="nav-item px-lg-4"><a>Ora sono consapevole dell'importanza di utilizzare connessioni crittografate come HTTPS per proteggere le mie comunicazioni online.</a></li>
+                                 <li class="nav-item px-lg-4"><a>Utilizzo una VPN (Virtual Private Network) per stabilire connessioni crittografate e proteggere la mia privacy online.</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Martino Dario 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
