@@ -11027,3 +11027,13 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+.black-background {
+  background-color: black;
+  color: white;
+  width: 750px; /* Imposta la larghezza desiderata */
+}
+
+.centered-text {
+  text-align: center;
+}

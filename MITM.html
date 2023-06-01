@@ -43,7 +43,6 @@
                         <div class="col-xl-9 col-lg-10 mx-auto">
                             <div class="bg-faded rounded p-5">
                                 <h2 class="section-heading mb-4">
-                                    <span class="section-heading-upper">Esperienza</span>
                                     <span class="section-heading-lower">MITM</span>
                                 </h2>
                                 <h2 class="section-heading mb-4">
@@ -66,19 +65,23 @@
                                 
 
                                 <p> Con il primo comando, consentiamo al nostro computer di funzionare come un router attivando  l’inoltro dei pacchetti IPv4.</p>
-                                <p style="background-color:Tomato;"> sysctl -w net.ipv4.ip_forward=1</p>
+                                <pre class="black-background centered-text"> sysctl -w net.ipv4.ip_forward=1
+                                    </pre> 
 
                                 <p>Per eseguire l'intercettazione dei pacchetti dalla vittima con l'attacco Man in the Middle, viene utilizzato un comando chiamato "arpspoof", che consente di ingannare la vittima facendole credere di comunicare con il router predefinito. È importante assicurarsi di sostituire correttamente le variabili "[Nome dell'interfaccia di rete]", "[IP della vittima]" e "[IP del router]" con i valori appropriati. </p>
                                 <p>In questo modo, l'attaccante può assumere il ruolo del router e dirigere il flusso di comunicazione tra la vittima e il router attraverso di sé, senza che la vittima se ne accorga. Questa manipolazione consente all'attaccante di intercettare, monitorare o persino modificare le informazioni che vengono scambiate tra le due parti.</p>
-                                <p style="background-color:Tomato;">arpspoof -i [Nome dell'interfaccia di rete] -t [IP della vittima] [IP del router]</p>
+                                <pre class="black-background centered-text"> arpspoof -i [Nome dell'interfaccia di rete] -t [IP della vittima] [IP del router]
+                                    </pre> 
 
                                 <p>Per fare in modo di intercettare i pacchetti dal router. Bisogna andare in un secondo terminale, viene eseguito il comando "arpspoof" per comunicare al router che siamo la vittima. Questa azione mira a ingannare il router facendogli credere che siamo la legittima vittima della comunicazione.</p>
-                                <p style="background-color:Tomato;">arpspoof -i [Nome dell'interfaccia di rete] -t [IP del router] [IP della vittima]</p>
-                                
+                                <pre class="black-background centered-text"> arpspoof -i [Nome dell'interfaccia di rete] -t [IP del router] [IP della vittima]
+                                    </pre>
+                            
                                 <p>Utilizzando il comando menzionato in precedenza, si avvia l'uso dello strumento chiamato "driftnet" per rilevare e catturare le immagini che la vittima sta visualizzando durante la sua navigazione. Questo strumento permette di monitorare il traffico di rete e identificare le immagini che vengono trasferite tra la vittima e i siti web visitati.</p>
-                                <p style="background-color:Tomato;">driftnet -i [Nome dell'interfaccia di rete]</p>
+                                <pre class="black-background centered-text"> driftnet -i [Nome dell'interfaccia di rete]
+                                    </pre>
 
-                                <a href="https://drive.google.com/drive/folders/1ompDzpPEHQqgkGAX7QLBZCmqSH0XX9AP">Documento</a>
+
                                 <h2 class="section-heading mb-4">
                                     <span class="section-heading-upper">Cosa ho imparato</span>
                                 </h2>
